@@ -1,0 +1,22 @@
+Import Matplotlib.pyplot as Plt
+
+X = [1,2,3,4,5,6,7,8,9,10]
+Y1 = [1,1,2,5,8,4,5,3,9,2]
+Y2 = [10,9,7,4,3,2,1,6,8,2]
+
+plt.plot(x,y1)
+plt.xlabel('X Label')
+plt.ylabel('Y Label')
+plt.title('Line Chart Number 1')
+plt.show()
+
+
+plt.plot(x,y1, label='Line1', color='green')
+plt.plot(x,y2, label='Line2', color='orange')
+plt.axis([0, 10. 0, 30])
+plt.xlabel('X Label')
+plt.ylabel('Y Label')
+plt.title('Line Chart Number 2')
+plt.legend()
+plt.show()
+
